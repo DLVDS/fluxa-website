@@ -14,6 +14,18 @@
   <meta property="og:image"       content="https://fluxa.com.au/og-image.png" />
   <meta name="twitter:card"       content="summary_large_image" />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .store-btn-wrap { position: relative; display: inline-block; }
+    .store-btn--disabled { opacity: 0.65; pointer-events: none; cursor: default; }
+    .coming-soon-badge {
+      position: absolute; top: -10px; right: -10px;
+      background: #7F77DD; color: #fff;
+      font-size: 10px; font-weight: 700; letter-spacing: 0.05em;
+      padding: 3px 8px; border-radius: 20px;
+      text-transform: uppercase; pointer-events: none;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body>
 
@@ -61,20 +73,26 @@
         <h1 class="fade-in fade-in--delay-1">Learn languages<br>without limits</h1>
         <p class="hero__sub fade-in fade-in--delay-2">Grammar-first lessons, AI conversation partner, and real-world scenarios. No energy gates. No subscriptions. Just learning.</p>
         <div class="store-btns fade-in fade-in--delay-3">
-          <a href="#download" class="store-btn store-btn--white">
-            <span class="store-btn__icon">🍎</span>
-            <span class="store-btn__text">
-              <span class="store-btn__small">Download on the</span>
-              <span class="store-btn__big">App Store</span>
-            </span>
-          </a>
-          <a href="#download" class="store-btn store-btn--outline">
-            <span class="store-btn__icon">▶</span>
-            <span class="store-btn__text">
-              <span class="store-btn__small">Get it on</span>
-              <span class="store-btn__big">Google Play</span>
-            </span>
-          </a>
+          <div class="store-btn-wrap">
+            <a href="#" class="store-btn store-btn--white store-btn--disabled" aria-disabled="true" tabindex="-1">
+              <span class="store-btn__icon">🍎</span>
+              <span class="store-btn__text">
+                <span class="store-btn__small">Download on the</span>
+                <span class="store-btn__big">App Store</span>
+              </span>
+            </a>
+            <span class="coming-soon-badge">Coming Soon</span>
+          </div>
+          <div class="store-btn-wrap">
+            <a href="#" class="store-btn store-btn--outline store-btn--disabled" aria-disabled="true" tabindex="-1">
+              <span class="store-btn__icon">▶</span>
+              <span class="store-btn__text">
+                <span class="store-btn__small">Get it on</span>
+                <span class="store-btn__big">Google Play</span>
+              </span>
+            </a>
+            <span class="coming-soon-badge">Coming Soon</span>
+          </div>
         </div>
         <div class="hero__rating fade-in fade-in--delay-4">
           <span class="hero__stars">★★★★★</span>
@@ -329,20 +347,26 @@
     <h2 class="fade-in">Ready to learn without limits?</h2>
     <p class="cta-section__sub fade-in fade-in--delay-1">Join thousands of learners who chose a better way to learn languages.</p>
     <div class="store-btns fade-in fade-in--delay-2">
-      <a href="#" class="store-btn store-btn--white">
-        <span class="store-btn__icon">🍎</span>
-        <span class="store-btn__text">
-          <span class="store-btn__small">Download on the</span>
-          <span class="store-btn__big">App Store</span>
-        </span>
-      </a>
-      <a href="#" class="store-btn store-btn--outline">
-        <span class="store-btn__icon">▶</span>
-        <span class="store-btn__text">
-          <span class="store-btn__small">Get it on</span>
-          <span class="store-btn__big">Google Play</span>
-        </span>
-      </a>
+          <div class="store-btn-wrap">
+            <a href="#" class="store-btn store-btn--white store-btn--disabled" aria-disabled="true" tabindex="-1">
+              <span class="store-btn__icon">🍎</span>
+              <span class="store-btn__text">
+                <span class="store-btn__small">Download on the</span>
+                <span class="store-btn__big">App Store</span>
+              </span>
+            </a>
+            <span class="coming-soon-badge">Coming Soon</span>
+          </div>
+          <div class="store-btn-wrap">
+            <a href="#" class="store-btn store-btn--outline store-btn--disabled" aria-disabled="true" tabindex="-1">
+              <span class="store-btn__icon">▶</span>
+              <span class="store-btn__text">
+                <span class="store-btn__small">Get it on</span>
+                <span class="store-btn__big">Google Play</span>
+              </span>
+            </a>
+            <span class="coming-soon-badge">Coming Soon</span>
+          </div>
     </div>
     <p class="cta-section__fine fade-in fade-in--delay-3">Free to download · No credit card required</p>
   </div>
