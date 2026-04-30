@@ -123,8 +123,37 @@ if (contactForm) {
     if (!message.value.trim() || message.value.trim().length < 10) { showError(message, 'Please enter a message (at least 10 characters).'); valid = false; }
 
     if (valid) {
-      contactForm.style.display = 'none';
-      document.getElementById('form-success').classList.add('visible');
+      const btn = contactForm.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      const data = {
+        name:    name.value.trim(),
+        email:   email.value.trim(),
+        subject: subject.value,
+        message: message.value.trim()
+      };
+
+      fetch('https://formspree.io/f/mwvyejaz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(res => {
+        if (res.ok) {
+          contactForm.style.display = 'none';
+          document.getElementById('form-success').classList.add('visible');
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+          alert('Something went wrong. Please try again or email support@fluxa.com.au directly.');
+        }
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+        alert('Something went wrong. Please try again or email support@fluxa.com.au directly.');
+      });
     }
   });
 }
