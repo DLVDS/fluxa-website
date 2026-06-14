@@ -78,6 +78,7 @@ h3 { font-size: 1.32rem; line-height: 1.2; }
   margin-bottom: 18px;
 }
 .eyebrow::before { content: "— "; color: var(--amber); }
+.eyebrow::after  { content: " —"; color: var(--amber); }
 
 /* ── Section rhythm ────────────────────────────────────────────────────── */
 .section { padding: 96px 0; position: relative; }
@@ -558,3 +559,9 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   .form-row { grid-template-columns: 1fr; }
   .contact__form { padding: 28px 20px; }
 }
+
+/* sub-page icon support */
+.about-stat__icon svg, .value-card__icon svg, .support-hero__email svg, .form-success__icon svg { width: 1em; height: 1em; }
+.support-hero__email svg { vertical-align: -0.15em; }
+.value-card__icon, .form-success__icon { color: var(--teal); }
+.built-item__icon:empty { display: none; }
