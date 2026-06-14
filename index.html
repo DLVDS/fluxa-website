@@ -4,28 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fluxa — Learn Languages Without Limits</title>
-  <meta name="description" content="Grammar-first language learning with AI conversation, voice audio, and CEFR tracking. Spanish and French free forever. No energy gates, no subscriptions." />
+  <meta name="description" content="Grammar-first language learning with an AI conversation partner, native audio, and CEFR tracking. Spanish and French free forever. No energy gates, no subscriptions." />
   <link rel="canonical" href="https://fluxa.com.au/" />
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://fluxa.com.au/" />
   <meta property="og:title"       content="Fluxa — Learn Languages Without Limits" />
-  <meta property="og:description" content="Grammar-first lessons, AI conversation partner, and real-world scenarios. No energy gates. No subscriptions. Just learning." />
+  <meta property="og:description" content="Grammar-first lessons, an AI conversation partner, and real-world scenarios. No energy gates. No subscriptions. Just learning." />
   <meta property="og:image"       content="https://fluxa.com.au/og-image.png" />
   <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="theme-color"        content="#0C5450" />
+  <!-- Fonts: Fraunces (display) + Atkinson Hyperlegible (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .store-btn-wrap { position: relative; display: inline-block; }
-    .store-btn--disabled { opacity: 0.65; pointer-events: none; cursor: default; }
-    .coming-soon-badge {
-      position: absolute; top: -10px; right: -10px;
-      background: #7F77DD; color: #fff;
-      font-size: 10px; font-weight: 700; letter-spacing: 0.05em;
-      padding: 3px 8px; border-radius: 20px;
-      text-transform: uppercase; pointer-events: none;
-      white-space: nowrap;
-    }
-  </style>
 </head>
 <body>
 
@@ -34,13 +27,7 @@
   <div class="container">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo" aria-label="Fluxa home">
-        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="34" height="34" rx="10" fill="#7F77DD"/>
-          <path d="M7 11C7 9.34 8.34 8 10 8h14c1.66 0 3 1.34 3 3v9c0 1.66-1.34 3-3 3h-2l-4 4-4-4H10c-1.66 0-3-1.34-3-3V11z" fill="white"/>
-          <circle cx="12" cy="15.5" r="1.5" fill="#7F77DD"/>
-          <circle cx="17" cy="15.5" r="1.5" fill="#7F77DD"/>
-          <circle cx="22" cy="15.5" r="1.5" fill="#7F77DD"/>
-        </svg>
+        <span class="nav__mark" aria-hidden="true">あ</span>
         Fluxa
       </a>
       <div class="nav__links" role="list">
@@ -49,7 +36,7 @@
         <a href="#pricing"   class="nav__link" data-section="pricing"   role="listitem">Pricing</a>
         <a href="support.html" class="nav__link" role="listitem">Support</a>
       </div>
-      <a href="#download" class="nav__cta">Download Free</a>
+      <a href="#download" class="nav__cta">Download free</a>
       <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -59,7 +46,7 @@
       <a href="#languages"   class="nav__mobile-link" role="menuitem">Languages</a>
       <a href="#pricing"     class="nav__mobile-link" role="menuitem">Pricing</a>
       <a href="support.html" class="nav__mobile-link" role="menuitem">Support</a>
-      <a href="#download"    class="nav__mobile-cta"  role="menuitem">Download Free</a>
+      <a href="#download"    class="nav__mobile-cta"  role="menuitem">Download free</a>
     </div>
   </div>
 </nav>
@@ -69,34 +56,41 @@
   <div class="container">
     <div class="hero__inner">
       <div class="hero__content">
-        <div class="hero__badge fade-in">🌍 12 languages available</div>
-        <h1 class="fade-in fade-in--delay-1">Learn languages<br>without limits</h1>
-        <p class="hero__sub fade-in fade-in--delay-2">Grammar-first lessons, AI conversation partner, and real-world scenarios. No energy gates. No subscriptions. Just learning.</p>
+        <div class="hero__eyebrow fade-in">
+          <span class="hero__glyphs" aria-hidden="true"><span>ñ</span><span>あ</span><span>中</span><span>ع</span></span>
+          <span>12 languages · one-time unlock</span>
+        </div>
+        <h1 class="fade-in fade-in--delay-1">Learn languages <em>without limits</em></h1>
+        <p class="hero__sub fade-in fade-in--delay-2">Grammar-first lessons, an AI conversation partner, and real-world scenarios. No energy gates. No subscriptions. Just learning.</p>
         <div class="store-btns fade-in fade-in--delay-3">
           <div class="store-btn-wrap">
-            <a href="#" class="store-btn store-btn--white store-btn--disabled" aria-disabled="true" tabindex="-1">
-              <span class="store-btn__icon">🍎</span>
+            <a href="#" class="store-btn store-btn--ink store-btn--disabled" aria-disabled="true" tabindex="-1">
+              <span class="store-btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2 1.1-3 1.1-3 -.6-.9-1.6-1-2-1.1 -.8-.1-1.7.5-2.1.5 -.4 0-1.1-.5-1.9-.5 -1 0-1.9.6-2.4 1.5 -1 1.8-.3 4.4.7 5.9 .5.7 1 1.5 1.8 1.5 .7 0 1-.5 1.9-.5 .9 0 1.1.5 1.9.5 .8 0 1.3-.7 1.8-1.5 .6-.8.8-1.6.8-1.6 0 0-1.6-.6-1.6-2.2zM14.6 7.2c.4-.5.7-1.2.6-1.9 -.6 0-1.3.4-1.7.9 -.4.4-.7 1.1-.6 1.8 .7 0 1.3-.4 1.7-.8z"/></svg>
+              </span>
               <span class="store-btn__text">
                 <span class="store-btn__small">Download on the</span>
                 <span class="store-btn__big">App Store</span>
               </span>
             </a>
-            <span class="coming-soon-badge">Coming Soon</span>
+            <span class="coming-soon-badge">Coming soon</span>
           </div>
           <div class="store-btn-wrap">
             <a href="#" class="store-btn store-btn--outline store-btn--disabled" aria-disabled="true" tabindex="-1">
-              <span class="store-btn__icon">▶</span>
+              <span class="store-btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.3v17.4c0 .4.4.6.7.4l13.4-8.4c.3-.2.3-.7 0-.9L5.7 2.9c-.3-.2-.7 0-.7.4z"/></svg>
+              </span>
               <span class="store-btn__text">
                 <span class="store-btn__small">Get it on</span>
                 <span class="store-btn__big">Google Play</span>
               </span>
             </a>
-            <span class="coming-soon-badge">Coming Soon</span>
+            <span class="coming-soon-badge">Coming soon</span>
           </div>
         </div>
         <div class="hero__rating fade-in fade-in--delay-4">
-          <span class="hero__stars">★★★★★</span>
-          <span>Loved by language learners</span>
+          <span class="hero__stars" aria-hidden="true">★★★★★</span>
+          <span>Built for people who want to actually understand the language</span>
         </div>
       </div>
 
@@ -108,10 +102,13 @@
             <div class="phone__header">
               <div class="phone__header-row">
                 <span class="phone__logo-txt">Fluxa</span>
-                <span class="phone__streak">🔥 7 days</span>
+                <span class="phone__streak">
+                  <svg class="phone__flame" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.5 3-1.8 4.2-2.9 6.1 -.8 1.4-.6 3 .6 3.6 .2-1 .8-1.8 1.6-2.3 -.3 1.6.5 2.4 1.4 3.2 1 .9 1.6 1.9 1.3 3.4 1.8-1 2.9-3 2.9-5.2 0-3.3-2.6-5-4.4-7 -.3-.4-.5-.8-.5-1.6z"/></svg>
+                  7-day streak
+                </span>
               </div>
               <div class="phone__progress-card">
-                <span class="phone__level-txt">🇪🇸 Spanish · Your level</span>
+                <span class="phone__progress-lang"><span class="phone__glyph">ñ</span> Spanish · your level</span>
                 <span class="phone__cefr">A2</span>
               </div>
             </div>
@@ -123,10 +120,22 @@
               </div>
               <div class="phone__section-lbl">Practice</div>
               <div class="phone__cards">
-                <div class="phone__card"><div class="phone__card-emoji">📖</div><div class="phone__card-title">Grammar</div><div class="phone__card-sub">Learn the rules</div></div>
-                <div class="phone__card"><div class="phone__card-emoji">💬</div><div class="phone__card-title">AI Chat</div><div class="phone__card-sub">Talk with Sofia</div></div>
-                <div class="phone__card"><div class="phone__card-emoji">🔤</div><div class="phone__card-title">Vocabulary</div><div class="phone__card-sub">Build word bank</div></div>
-                <div class="phone__card"><div class="phone__card-emoji">🌍</div><div class="phone__card-title">Languages</div><div class="phone__card-sub">Explore packs</div></div>
+                <div class="phone__card">
+                  <svg class="phone__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15.5H5.5A1.5 1.5 0 0 1 4 18zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v15.5h5.5A1.5 1.5 0 0 0 20 18z"/></svg>
+                  <div class="phone__card-title">Grammar</div><div class="phone__card-sub">Learn the rules</div>
+                </div>
+                <div class="phone__card">
+                  <svg class="phone__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 4V6a1 1 0 0 1 1-1z"/></svg>
+                  <div class="phone__card-title">AI chat</div><div class="phone__card-sub">Talk with Sofia</div>
+                </div>
+                <div class="phone__card">
+                  <svg class="phone__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16V9m4 9V6m4 12V8m4 10v-6m4 6v-3"/></svg>
+                  <div class="phone__card-title">Vocabulary</div><div class="phone__card-sub">Build word bank</div>
+                </div>
+                <div class="phone__card phone__card--glyphs">
+                  <span class="phone__card-glyphs" aria-hidden="true">あ<small>中</small></span>
+                  <div class="phone__card-title">Languages</div><div class="phone__card-sub">Explore packs</div>
+                </div>
               </div>
             </div>
           </div>
@@ -140,71 +149,79 @@
 <section class="section problem" id="problem">
   <div class="container">
     <div class="problem__intro fade-in">
+      <span class="eyebrow">The status quo</span>
       <h2>Tired of being locked out of your own learning?</h2>
     </div>
     <div class="problem__grid">
       <div class="problem__card fade-in fade-in--delay-1">
-        <div class="problem__icon">❌</div>
+        <span class="problem__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>
+        </span>
         <div>
           <h3>Energy gates that stop you mid-lesson</h3>
           <p>Run out of hearts and you're locked out until tomorrow. Your motivation shouldn't have a bedtime.</p>
         </div>
       </div>
       <div class="problem__card fade-in fade-in--delay-2">
-        <div class="problem__icon">❌</div>
+        <span class="problem__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>
+        </span>
         <div>
           <h3>Grammar taught through random, useless sentences</h3>
-          <p>Memorising "The owl drinks milk" teaches you nothing about how the language actually works.</p>
+          <p>Memorising "the owl drinks milk" teaches you nothing about how the language actually works.</p>
         </div>
       </div>
       <div class="problem__card fade-in fade-in--delay-3">
-        <div class="problem__icon">❌</div>
+        <span class="problem__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>
+        </span>
         <div>
-          <h3>Expensive subscriptions that never end</h3>
+          <h3>Subscriptions that never end</h3>
           <p>Paying every month forever for a language you're trying to learn feels like a trap, not a service.</p>
         </div>
       </div>
     </div>
-    <p class="problem__cta fade-in">Fluxa was built to fix every single one of these.</p>
+    <p class="problem__cta fade-in">Fluxa was built to fix every one of these.</p>
   </div>
 </section>
 
 <!-- ── Features Section ────────────────────────────────────────────────────── -->
 <section class="section features" id="features">
   <div class="container">
-    <div class="features__header fade-in">
+    <div class="section__header fade-in">
+      <span class="eyebrow">What's inside</span>
       <h2>Everything you need.<br>Nothing you don't.</h2>
     </div>
     <div class="features__grid">
       <div class="feature-card fade-in fade-in--delay-1">
-        <div class="feature-card__icon">♾️</div>
-        <h3>No Energy Gates</h3>
-        <p>Learn as much as you want, whenever you want. No timers, no hearts, no limits. Your learning, your pace.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 12c-1.7-2.3-3.4-3.4-5.1-3.4a3.4 3.4 0 0 0 0 6.8c1.7 0 3.4-1.1 5.1-3.4zm0 0c1.7 2.3 3.4 3.4 5.1 3.4a3.4 3.4 0 0 0 0-6.8c-1.7 0-3.4 1.1-5.1 3.4z"/></svg></span>
+        <h3>No energy gates</h3>
+        <p>Learn as much as you want, whenever you want. No timers, no hearts, no limits. Your pace, always.</p>
       </div>
       <div class="feature-card fade-in fade-in--delay-2">
-        <div class="feature-card__icon">📖</div>
-        <h3>Grammar First</h3>
-        <p>Every question comes with a grammar rule explanation so you actually understand why, not just what.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6c-1.6-1.2-3.6-1.5-6-1.5V18c2.4 0 4.4.3 6 1.5 1.6-1.2 3.6-1.5 6-1.5V4.5c-2.4 0-4.4.3-6 1.5zM12 6v13.5"/></svg></span>
+        <h3>Grammar first</h3>
+        <p>Every question explains the rule before you answer, so you understand <em>why</em> — not just <em>what</em>.</p>
       </div>
       <div class="feature-card fade-in fade-in--delay-3">
-        <div class="feature-card__icon">💬</div>
-        <h3>AI Conversation</h3>
-        <p>Practice real conversations with Sofia, your AI language partner. She speaks back, corrects your grammar, and never judges.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 4V6a1 1 0 0 1 1-1z"/><path d="M9 10h6M9 12.5h3"/></svg></span>
+        <h3>AI conversation</h3>
+        <p>Practise real conversations with Sofia, your AI partner. She speaks back, corrects your grammar, and never judges.</p>
       </div>
       <div class="feature-card fade-in fade-in--delay-1">
-        <div class="feature-card__icon">🔊</div>
-        <h3>Voice and Audio</h3>
-        <p>Hear every word and sentence spoken by a native voice. Build real pronunciation from day one.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16V9m4 10V6m4 12V8m4 10v-6m4 5v-4"/></svg></span>
+        <h3>Voice and audio</h3>
+        <p>Hear every word and sentence in a native voice. Build real pronunciation from day one.</p>
       </div>
       <div class="feature-card fade-in fade-in--delay-2">
-        <div class="feature-card__icon">📊</div>
-        <h3>CEFR Tracking</h3>
-        <p>Know exactly where you stand. Fluxa maps your progress to internationally recognised A1–C2 levels.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M7 20v-5m4 5V9m4 11v-8m4 8V6"/></svg></span>
+        <h3>CEFR tracking</h3>
+        <p>Know exactly where you stand. Fluxa maps your progress to the internationally recognised A1–C2 levels.</p>
       </div>
       <div class="feature-card fade-in fade-in--delay-3">
-        <div class="feature-card__icon">🛡️</div>
-        <h3>Streak Protection</h3>
-        <p>Life happens. One free streak save per week means missing a day won't undo your hard work.</p>
+        <span class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6z"/></svg></span>
+        <h3>Streak protection</h3>
+        <p>Life happens. One free streak save a week means missing a day won't undo your hard work.</p>
       </div>
     </div>
   </div>
@@ -213,23 +230,24 @@
 <!-- ── Languages Section ───────────────────────────────────────────────────── -->
 <section class="section languages" id="languages">
   <div class="container">
-    <div class="languages__header fade-in">
-      <h2>12 languages. Your journey starts here.</h2>
+    <div class="section__header fade-in">
+      <span class="eyebrow">The lineup</span>
+      <h2>Twelve languages. Your journey starts here.</h2>
+      <p class="section__sub">Spanish and French are always free. Unlock any other language for a one-time payment — no subscription, never expires.</p>
     </div>
-    <p class="languages__sub fade-in">Spanish and French are always free. Unlock any other language for a one-time payment — no subscription, never expires.</p>
     <div class="languages__grid">
-      <div class="lang-card fade-in fade-in--delay-1"><span class="lang-card__flag">🇪🇸</span><span class="lang-card__name">Spanish</span><span class="badge badge--free">Free</span></div>
-      <div class="lang-card fade-in fade-in--delay-2"><span class="lang-card__flag">🇫🇷</span><span class="lang-card__name">French</span><span class="badge badge--free">Free</span></div>
-      <div class="lang-card fade-in fade-in--delay-3"><span class="lang-card__flag">🇯🇵</span><span class="lang-card__name">Japanese</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-4"><span class="lang-card__flag">🇩🇪</span><span class="lang-card__name">German</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-1"><span class="lang-card__flag">🇮🇹</span><span class="lang-card__name">Italian</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-2"><span class="lang-card__flag">🇨🇳</span><span class="lang-card__name">Mandarin</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-3"><span class="lang-card__flag">🇰🇷</span><span class="lang-card__name">Korean</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-4"><span class="lang-card__flag">🇧🇷</span><span class="lang-card__name">Portuguese</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-1"><span class="lang-card__flag">🇸🇦</span><span class="lang-card__name">Arabic</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-2"><span class="lang-card__flag">🇮🇳</span><span class="lang-card__name">Hindi</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-3"><span class="lang-card__flag">🇵🇭</span><span class="lang-card__name">Filipino</span><span class="badge badge--price">$4.99</span></div>
-      <div class="lang-card fade-in fade-in--delay-4"><span class="lang-card__flag">🇬🇷</span><span class="lang-card__name">Greek</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--es fade-in"><span class="lang-card__glyph" aria-hidden="true">ñ</span><span class="lang-card__name">Spanish</span><span class="badge badge--free">Free</span></div>
+      <div class="lang-card lang--fr fade-in"><span class="lang-card__glyph" aria-hidden="true">é</span><span class="lang-card__name">French</span><span class="badge badge--free">Free</span></div>
+      <div class="lang-card lang--ja fade-in"><span class="lang-card__glyph" aria-hidden="true">あ</span><span class="lang-card__name">Japanese</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--de fade-in"><span class="lang-card__glyph" aria-hidden="true">ß</span><span class="lang-card__name">German</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--it fade-in"><span class="lang-card__glyph" aria-hidden="true">à</span><span class="lang-card__name">Italian</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--zh fade-in"><span class="lang-card__glyph" aria-hidden="true">中</span><span class="lang-card__name">Mandarin</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--ko fade-in"><span class="lang-card__glyph" aria-hidden="true">한</span><span class="lang-card__name">Korean</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--pt fade-in"><span class="lang-card__glyph" aria-hidden="true">ã</span><span class="lang-card__name">Portuguese</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--ar fade-in"><span class="lang-card__glyph" aria-hidden="true">ع</span><span class="lang-card__name">Arabic</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--hi fade-in"><span class="lang-card__glyph" aria-hidden="true">अ</span><span class="lang-card__name">Hindi</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--tr fade-in"><span class="lang-card__glyph" aria-hidden="true">ş</span><span class="lang-card__name">Turkish</span><span class="badge badge--price">$4.99</span></div>
+      <div class="lang-card lang--el fade-in"><span class="lang-card__glyph" aria-hidden="true">λ</span><span class="lang-card__name">Greek</span><span class="badge badge--price">$4.99</span></div>
     </div>
   </div>
 </section>
@@ -237,24 +255,25 @@
 <!-- ── How It Works ────────────────────────────────────────────────────────── -->
 <section class="section how" id="how-it-works">
   <div class="container">
-    <div class="how__header fade-in">
+    <div class="section__header fade-in">
+      <span class="eyebrow">How it works</span>
       <h2>Start speaking in minutes</h2>
     </div>
     <div class="how__grid">
       <div class="how-step fade-in fade-in--delay-1">
-        <div class="how-step__num">1</div>
+        <div class="how-step__num">01</div>
         <h3>Choose your language</h3>
-        <p>Pick from 12 languages. Spanish and French are completely free to start immediately.</p>
+        <p>Pick from twelve languages. Spanish and French are completely free to start immediately.</p>
       </div>
       <div class="how-step fade-in fade-in--delay-2">
-        <div class="how-step__num">2</div>
+        <div class="how-step__num">02</div>
         <h3>Learn with grammar</h3>
         <p>Every lesson explains the grammar rule before you answer. No more guessing — you understand <em>why</em>.</p>
       </div>
       <div class="how-step fade-in fade-in--delay-3">
-        <div class="how-step__num">3</div>
-        <h3>Practice with Sofia</h3>
-        <p>Have real conversations with your AI partner. She speaks, you speak, you both learn from each exchange.</p>
+        <div class="how-step__num">03</div>
+        <h3>Practise with Sofia</h3>
+        <p>Have real conversations with your AI partner. She speaks, you speak, and you both learn from each exchange.</p>
       </div>
     </div>
   </div>
@@ -263,50 +282,51 @@
 <!-- ── Pricing ─────────────────────────────────────────────────────────────── -->
 <section class="section pricing" id="pricing">
   <div class="container">
-    <div class="pricing__header fade-in">
+    <div class="section__header fade-in">
+      <span class="eyebrow">Pricing</span>
       <h2>Simple, honest pricing</h2>
     </div>
     <div class="pricing__grid">
       <!-- Free -->
       <div class="price-card price-card--free fade-in fade-in--delay-1">
-        <div class="price-card__label">Free Forever</div>
+        <div class="price-card__label">Free forever</div>
         <div class="price-card__price">
           <span class="price-card__amount">$0</span>
         </div>
         <div class="price-card__note">No credit card required</div>
         <div class="price-card__divider"></div>
         <ul class="price-card__features">
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Spanish — full access</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>French — full access</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Unlimited lessons</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>AI conversation partner</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Grammar explanations</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>CEFR progress tracking</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Streak protection</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Spanish — full access</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>French — full access</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Unlimited lessons</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>AI conversation partner</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Grammar explanations</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>CEFR progress tracking</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Streak protection</li>
         </ul>
-        <a href="#download" class="btn btn--outline-purple btn--full">Download Free</a>
+        <a href="#download" class="btn btn--outline btn--full">Download free</a>
       </div>
 
       <!-- Pack -->
       <div class="price-card price-card--featured fade-in fade-in--delay-2">
-        <div class="price-card__badge">Most Popular</div>
-        <div class="price-card__label">Language Pack</div>
+        <div class="price-card__badge">Most popular</div>
+        <div class="price-card__label">Language pack</div>
         <div class="price-card__price">
           <span class="price-card__amount">$4.99</span>
           <span class="price-card__period">per language</span>
         </div>
-        <div class="price-card__note">One-time payment · Never expires</div>
+        <div class="price-card__note">One-time payment · never expires</div>
         <div class="price-card__divider"></div>
         <ul class="price-card__features">
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Everything in Free</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Full language pack access</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>All grammar lessons</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>All vocabulary lessons</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>AI conversation in that language</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>Future content updates included</li>
-          <li class="price-card__feature"><span class="price-card__check">✓</span>No subscription required</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Everything in Free</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Full language pack access</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>All grammar lessons</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>All vocabulary lessons</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>AI conversation in that language</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>Future content updates included</li>
+          <li class="price-card__feature"><span class="price-card__check" aria-hidden="true">✓</span>No subscription required</li>
         </ul>
-        <a href="#download" class="btn btn--primary btn--full">Get Started Free</a>
+        <a href="#download" class="btn btn--primary btn--full">Get started free</a>
       </div>
     </div>
   </div>
@@ -315,27 +335,28 @@
 <!-- ── Testimonials ────────────────────────────────────────────────────────── -->
 <section class="section testimonials" id="testimonials">
   <div class="container">
-    <div class="testimonials__header fade-in">
+    <div class="section__header fade-in">
+      <span class="eyebrow">Early word</span>
       <h2>What learners are saying</h2>
     </div>
     <div class="testimonials__grid">
       <div class="testimonial-card fade-in fade-in--delay-1">
-        <div class="testimonial-card__stars">★★★★★</div>
-        <p class="testimonial-card__quote">"Finally an app that explains <em>why</em> sentences are constructed the way they are. I learned more grammar in one week with Fluxa than in months with other apps."</p>
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__quote">Finally an app that explains <em>why</em> sentences are built the way they are. I learned more grammar in one week with Fluxa than in months with other apps.</p>
         <div class="testimonial-card__author">Sarah M.</div>
-        <div class="testimonial-card__role">Learning Spanish</div>
+        <div class="testimonial-card__role"><span class="testimonial-card__glyph" aria-hidden="true">ñ</span> Learning Spanish</div>
       </div>
       <div class="testimonial-card fade-in fade-in--delay-2">
-        <div class="testimonial-card__stars">★★★★★</div>
-        <p class="testimonial-card__quote">"The AI conversation feature is incredible. Sofia actually corrects my French in real time and I can hear the correct pronunciation immediately."</p>
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__quote">The AI conversation feature is incredible. Sofia corrects my French in real time and I can hear the right pronunciation immediately.</p>
         <div class="testimonial-card__author">James K.</div>
-        <div class="testimonial-card__role">Learning French</div>
+        <div class="testimonial-card__role"><span class="testimonial-card__glyph" aria-hidden="true">é</span> Learning French</div>
       </div>
       <div class="testimonial-card fade-in fade-in--delay-3">
-        <div class="testimonial-card__stars">★★★★★</div>
-        <p class="testimonial-card__quote">"No energy limits is a game changer. I can sit down for an hour of Japanese practice without being told to come back tomorrow."</p>
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__quote">No energy limits is a game changer. I can sit down for an hour of Japanese practice without being told to come back tomorrow.</p>
         <div class="testimonial-card__author">Priya L.</div>
-        <div class="testimonial-card__role">Learning Japanese</div>
+        <div class="testimonial-card__role"><span class="testimonial-card__glyph" aria-hidden="true">あ</span> Learning Japanese</div>
       </div>
     </div>
   </div>
@@ -344,31 +365,37 @@
 <!-- ── Download CTA ────────────────────────────────────────────────────────── -->
 <section class="cta-section" id="download">
   <div class="container">
-    <h2 class="fade-in">Ready to learn without limits?</h2>
-    <p class="cta-section__sub fade-in fade-in--delay-1">Join thousands of learners who chose a better way to learn languages.</p>
-    <div class="store-btns fade-in fade-in--delay-2">
-          <div class="store-btn-wrap">
-            <a href="#" class="store-btn store-btn--white store-btn--disabled" aria-disabled="true" tabindex="-1">
-              <span class="store-btn__icon">🍎</span>
-              <span class="store-btn__text">
-                <span class="store-btn__small">Download on the</span>
-                <span class="store-btn__big">App Store</span>
-              </span>
-            </a>
-            <span class="coming-soon-badge">Coming Soon</span>
-          </div>
-          <div class="store-btn-wrap">
-            <a href="#" class="store-btn store-btn--outline store-btn--disabled" aria-disabled="true" tabindex="-1">
-              <span class="store-btn__icon">▶</span>
-              <span class="store-btn__text">
-                <span class="store-btn__small">Get it on</span>
-                <span class="store-btn__big">Google Play</span>
-              </span>
-            </a>
-            <span class="coming-soon-badge">Coming Soon</span>
-          </div>
+    <div class="cta-section__inner">
+      <h2 class="fade-in">Ready to learn without limits?</h2>
+      <p class="cta-section__sub fade-in fade-in--delay-1">A better way to learn a language — grammar you understand, conversation that talks back, and a price you pay once.</p>
+      <div class="store-btns store-btns--center fade-in fade-in--delay-2">
+        <div class="store-btn-wrap">
+          <a href="#" class="store-btn store-btn--paper store-btn--disabled" aria-disabled="true" tabindex="-1">
+            <span class="store-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2 1.1-3 1.1-3 -.6-.9-1.6-1-2-1.1 -.8-.1-1.7.5-2.1.5 -.4 0-1.1-.5-1.9-.5 -1 0-1.9.6-2.4 1.5 -1 1.8-.3 4.4.7 5.9 .5.7 1 1.5 1.8 1.5 .7 0 1-.5 1.9-.5 .9 0 1.1.5 1.9.5 .8 0 1.3-.7 1.8-1.5 .6-.8.8-1.6.8-1.6 0 0-1.6-.6-1.6-2.2zM14.6 7.2c.4-.5.7-1.2.6-1.9 -.6 0-1.3.4-1.7.9 -.4.4-.7 1.1-.6 1.8 .7 0 1.3-.4 1.7-.8z"/></svg>
+            </span>
+            <span class="store-btn__text">
+              <span class="store-btn__small">Download on the</span>
+              <span class="store-btn__big">App Store</span>
+            </span>
+          </a>
+          <span class="coming-soon-badge coming-soon-badge--on-dark">Coming soon</span>
+        </div>
+        <div class="store-btn-wrap">
+          <a href="#" class="store-btn store-btn--paper-outline store-btn--disabled" aria-disabled="true" tabindex="-1">
+            <span class="store-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.3v17.4c0 .4.4.6.7.4l13.4-8.4c.3-.2.3-.7 0-.9L5.7 2.9c-.3-.2-.7 0-.7.4z"/></svg>
+            </span>
+            <span class="store-btn__text">
+              <span class="store-btn__small">Get it on</span>
+              <span class="store-btn__big">Google Play</span>
+            </span>
+          </a>
+          <span class="coming-soon-badge coming-soon-badge--on-dark">Coming soon</span>
+        </div>
+      </div>
+      <p class="cta-section__fine fade-in fade-in--delay-3">Free to download · no credit card required</p>
     </div>
-    <p class="cta-section__fine fade-in fade-in--delay-3">Free to download · No credit card required</p>
   </div>
 </section>
 
@@ -378,13 +405,7 @@
     <div class="footer__inner">
       <div class="footer__brand">
         <a href="index.html" class="footer__logo">
-          <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="34" height="34" rx="10" fill="#7F77DD"/>
-            <path d="M7 11C7 9.34 8.34 8 10 8h14c1.66 0 3 1.34 3 3v9c0 1.66-1.34 3-3 3h-2l-4 4-4-4H10c-1.66 0-3-1.34-3-3V11z" fill="white"/>
-            <circle cx="12" cy="15.5" r="1.5" fill="#7F77DD"/>
-            <circle cx="17" cy="15.5" r="1.5" fill="#7F77DD"/>
-            <circle cx="22" cy="15.5" r="1.5" fill="#7F77DD"/>
-          </svg>
+          <span class="nav__mark" aria-hidden="true">あ</span>
           Fluxa
         </a>
         <span class="footer__copy">© 2026 DLV Digital Solutions Pty Ltd. All rights reserved.</span>
@@ -395,7 +416,7 @@
         <a href="support.html"  class="footer__link">Support</a>
         <a href="about.html"    class="footer__link">About</a>
       </nav>
-      <div class="footer__made">Made in Melbourne, Australia 🇦🇺</div>
+      <div class="footer__made">Made in Melbourne, Australia</div>
     </div>
   </div>
 </footer>
